@@ -1,0 +1,251 @@
+module Base
+{	
+	item WaterMacNCheesePot
+	{
+		DisplayName = Cooking Pot with Mac N Cheese,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = Pot_Water,
+		BadCold = true,
+		BadInMicrowave = true,
+		CookingSound = BoilingFood,
+		EatType = Pot,
+		GoodHot = true,
+		EvolvedRecipe = BowlMacNCheese:20|Cooked,
+		IsCookable = true,
+		ReplaceOnUse = Pot,
+		MinutesToCook = 20,
+		MinutesToBurn = 50,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -40,
+		UnhappyChange = -30,
+		Calories = 690,
+		Carbohydrates = 126,
+		Lipids = 12,
+		Proteins = 21,
+		StaticModel = CookingPot,
+		WorldStaticModel = CookingPotPasta_Ground,
+		Tags = HasMetal,
+	}
+
+	item MacNCheesePot
+	{
+		DisplayName = Pot of Mac N Cheese,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = PotFull,
+		BadCold = true,
+		BadInMicrowave = true,
+		CookingSound = BoilingFood,
+		GoodHot = true,
+		IsCookable = true,
+		ReplaceOnUse = Pot,
+		EvolvedRecipe = BowlMacNCheese:20|Cooked,
+		MinutesToCook = 20,
+		MinutesToBurn = 50,
+		DaysFresh = 4,
+		DaysTotallyRotten = 7,
+		HungerChange = -40,
+		UnhappyChange = -30,
+		Calories = 690,
+		Carbohydrates = 126,
+		Lipids = 12,
+		Proteins = 21,
+		StaticModel = CookingPot,
+		WorldStaticModel = CookingPotPasta_Ground,
+		Tags = HasMetal,
+	}
+	
+	item MacNCheeseSaucepan
+	{
+		DisplayName = Saucepan of Mac N Cheese,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = SaucepanFilled,
+		BadCold = true,
+		BadInMicrowave = true,
+		CookingSound = BoilingFood,
+		GoodHot = true,
+		IsCookable = true,
+		EvolvedRecipe = BowlMacNCheese:20|Cooked,
+		ReplaceOnUse = Saucepan,
+		MinutesToCook = 20,
+		MinutesToBurn = 50,
+		DaysFresh = 4,
+		DaysTotallyRotten = 7,
+		HungerChange = -20,
+		UnhappyChange = -15,
+		Calories = 345,
+		Carbohydrates = 63,
+		Lipids = 6,
+		Proteins = 11,
+		WorldStaticModel = SaucePanPasta,
+		Tags = HasMetal,
+	}
+	
+	item WaterMacNCheeseSaucepan
+	{
+		DisplayName = Saucepan With Mac N Cheese,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = SaucepanFilled,
+		BadCold = true,
+		BadInMicrowave = true,
+		CookingSound = BoilingFood,
+		GoodHot = true,
+		IsCookable = true,
+		ReplaceOnUse = Saucepan,
+		MinutesToCook = 20,
+		EvolvedRecipe = BowlMacNCheese:20|Cooked,
+		MinutesToBurn = 50,
+		DaysFresh = 4,
+		DaysTotallyRotten = 7,
+		HungerChange = -20,
+		UnhappyChange = -15,
+		Calories = 345,
+		Carbohydrates = 63,
+		Lipids = 6,
+		Proteins = 11,
+		WorldStaticModel = SaucePanPasta,
+		Tags = HasMetal,
+	}
+	
+	item MacNCheeseBowl
+	{
+		DisplayName = Bowl of Mac N Cheese,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		Icon = FriedRice,
+		BadInMicrowave = true,
+		EatType = 2hand,
+		GoodHot = true,
+		IsCookable = true,
+		ReplaceOnUse = Bowl,
+		MinutesToCook = 10,
+		MinutesToBurn = 40,
+		DaysFresh = 4,
+		DaysTotallyRotten = 7,
+		HungerChange = -1,
+		StaticModel = Bowl,
+		WorldStaticModel = BowlPasta_Ground,
+	}
+	
+	item Macaroni
+	{
+		DisplayName = Macaroni,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.6,
+		DangerousUncooked = TRUE,
+		IsCookable = TRUE,
+		Icon = Dough,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -30,
+		ThirstChange = 40,
+		UnhappyChange = -40,
+		Calories = 1064,
+		Carbohydrates = 198,
+		Lipids = 13.32,
+		Proteins = 35.4,
+		WorldStaticModel = Dough,
+	}
+	
+	item RoughMacNCheese
+	{
+		DisplayName = Homemade Mac and Cheese,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.6,
+		Icon = Macandcheese,
+		DaysFresh = 30,
+		DaysTotallyRotten = 45,
+		HungerChange = -50,
+		UnhappyChange = 20,
+		Calories = 1064,
+		Carbohydrates = 198,
+		Lipids = 13.32,
+		Proteins = 35.4,
+		WorldStaticModel = MacAndCheese,
+	}
+	
+	evolvedrecipe WaterMacNCheesePot
+	{
+		BaseItem:WaterMacNCheesePot,
+		MaxItems:6,
+		ResultItem:MacNCheesePot,
+		Cookable:true,
+		Name:Add to Pot of Mac N Cheese,
+	}
+	
+	evolvedrecipe WaterMacNCheeseSaucepan
+	{
+		BaseItem:WaterMacNCheeseSaucepan,
+		MaxItems:4,
+		ResultItem:MacNCheeseSaucepan,
+		Cookable:true,
+		Name:Add to Saucepan of Mac N Cheese,
+	}
+	
+	evolvedrecipe BowlMacNCheese
+	{
+		BaseItem:Bowl,
+		MaxItems:1,
+		ResultItem:MacNCheeseBowl,
+	}
+	
+	evolvedrecipe PotMacNCheese
+	{
+		BaseItem:WaterPot,
+		MaxItems:1,
+		ResultItem:WaterMacNCheesePot,
+		Cookable:true,
+		Name:Prepare Pot of Mac N Cheese,
+	}
+	
+	evolvedrecipe PanMacNCheese
+	{
+		BaseItem:WaterSaucepan,
+		MaxItems:1,
+		ResultItem:WaterMacNCheeseSaucepan,
+		Cookable:true,
+		Name:Prepare Saucepan of Mac N Cheese,
+	}
+	
+	recipe Make Macaroni
+	{
+		keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+		keep [Recipe.GetItemTypes.SharpKnife],
+		keep Bowl,
+		Water=2,
+        [Recipe.GetItemTypes.Flour]=3,
+        Butter/Lard/Margarine;15,
+        Salt;2,
+		
+		Result: Macaroni,
+		SkillRequired: Cooking=4,
+	    Time:100.0,
+	    OnCreate:Recipe.OnCreate.AddBaseIngredientToCookingVessel,
+	    Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	}
+	
+	recipe Make Mac and Cheese
+	{
+		keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+		Macaroni;30,
+		Cheese;5,
+		
+		Result:RoughMacNCheese,
+		Time:50.0,
+	    OnCreate:Recipe.OnCreate.AddBaseIngredientToCookingVessel,
+	    Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	}
+}

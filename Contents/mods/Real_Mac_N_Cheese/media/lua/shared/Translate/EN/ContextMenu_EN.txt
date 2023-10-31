@@ -1,0 +1,7 @@
+Context_MenuEN {
+	ContextMenu_EvolvedRecipe_WaterMacNCheesePot = "Mac and Cheese",
+	ContextMenu_EvolvedRecipe_WaterMacNCheeseSaucepan = "Mac and Cheese",
+	ContextMenu_EvolvedRecipe_BowlMacNCheese = "Bowl of Mac N Cheese",
+	ContextMenu_EvolvedRecipe_PotMacNCheese = "",
+	ContextMenu_EvolvedRecipe_SaucepanMacNCheese = "",
+}
